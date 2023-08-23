@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0; /* Adjust the background color as needed */
+    box-shadow: 0 0 10px rgba(48, 206, 103, 0.3); /* Add a subtle box shadow */
+    padding: 10px; /* Add some padding around the game */
+}
+
+#score-display {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #2546d9;
+}
+
+#game-canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff; /* Set a background color for the canvas */
+}
+.game-title {
+    text-align: center;
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    color: #6735ef; /* Adjust the color as needed */
+}
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.1);
+    transform-origin: center center;
+    transition: transform 0.2s ease-in-out;
+}
